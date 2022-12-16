@@ -1,0 +1,769 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
+         url("Fonts/Booter - Zero Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Raleway;
+    color: #777;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3)
+}
+
+.main-nav li {
+    padding: 0 5%;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, .3)
+}
+
+.main-header {
+    background-color: rgba(0, 0, 0, .6);
+    background-image: url("Images/Header Background.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+.band-name {
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: "Booter - Zero Zero";
+    font-weight: normal;
+    color: rgb(238, 227, 227);
+}
+
+.band-name-large {
+    font-size: 8em;
+}
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+.section-header {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.about-band-image {
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.main-footer {
+    background-color: #56CCF2;
+    color: rgb(243, 234, 234);
+    padding: .25em 0;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav li {
+    padding: 0 .5em;
+}
+
+.footer-nav img {
+    width: 30px;
+    height: 30px;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+.btn-header {
+    margin: .5em 15% 2em 15%;
+    color: white;
+    border: 2px solid rgb(236, 107, 2);
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.btn-play {
+    display: block;
+    margin: 0 auto;
+    color: rgb(236, 107, 2);
+    font-size: 4em;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    text-align: center;
+}
+
+.btn-primary {
+    color: white;
+    background-color: rgb(236, 107, 2);
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: rgb(176, 79, 0);
+}
+
+.tour-row {
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.tour-row:last-child {
+    border: none;
+}
+
+.tour-item {
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.tour-date {
+    color: #555;
+    width: 11%;
+    font-weight: bold;
+}
+
+.tour-city {
+    width: 24%;
+}
+
+.tour-arena {
+    width: 42%;
+}
+
+.tour-btn {
+    max-width: 19%;
+}
+
+.shop-item {
+      position: relative;
+	  width: auto;
+	  display: grid;
+	  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	  grid-gap: 20px;
+	  padding: 20px;
+}
+
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.shop-item-image {
+    height: 250px;
+    border-radius: .3em;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: #333;
+	font-size: 25px;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: rgb(37, 36, 36);
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 100%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 30px;
+    
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid rgb(236, 107, 2);
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+
+
+.primary-btn{
+	padding: 10px 20px;
+	border: 2px solid #555;
+	background: transparent;
+	border-radius: 30px;
+	font-size: 20px;
+	font-weight: 500;
+	transition: 0.5s;
+}
+
+.primary-btn:hover{
+	background: rgb(0, 0, 0);
+	color: white;
+}
+
+nav{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 20px 2cm;
+	justify-content: space-around;
+    background-color: bisque;
+}
+
+nav .logo{
+	align-items: center;
+	display: flex;
+	flex-basis: 30%;
+}
+
+nav .logo img{
+	width: 2.0cm;
+	margin-right: 15px;
+	border-radius: 50px;
+}
+
+nav .logo h1{
+	font-size: 0.8cm;
+}
+nav .nav-links{
+	flex-basis: 40%;
+	text-align: center;
+	padding-left: 1cm;
+}
+
+nav .nav-links ul{
+	display: flex;
+	list-style: none;
+}
+
+nav .nav-links ul li a{
+	color: black;
+	text-decoration: none;
+	margin-right: 25px;
+	font-size: 20px;
+}
+
+nav .nav-links ul li a:hover{
+	color: grey;
+}
+
+nav .nav-icons{
+	flex-basis: 30%;
+	text-align: center;
+}
+
+nav .nav-icons i{
+	font-size: 30px;
+	margin-right: 20px;
+	padding: 10px;
+	transition: 0.5s;
+}
+
+.nav-icons i:hover{
+	background: lightgray;
+	border-radius: 5px;
+}
+
+.banner{
+	display: flex;
+	flex-direction: row;
+	padding: 20px 2cm;
+	align-items: center;
+	background: navajowhite;
+}
+
+.banner .leftSide{
+	width: 50%;
+}
+
+.banner .leftSide h1{
+	font-size: 1.4cm;
+	margin-bottom: 1cm;
+}
+
+.banner .leftSide p{
+	margin-bottom: 1cm;
+}
+
+.banner .leftSide button{
+	padding: 15px 25px;
+	background: black;
+	color: white;
+	font-weight: 700;
+	border: none;
+	transition: 0.5s;
+	text-transform: uppercase;
+	border-radius: 5px;
+}
+
+.banner .rightSide{
+	padding-left: 1cm;
+}
+
+.banner .rightSide img{
+	transition: 5s;
+	width: auto;
+}
+
+.banner .rightSide img:hover{
+	filter: drop-shadow(10px 10px 15px grey);
+}
+
+/*----------------------*/
+
+.about{
+	margin-top: 50px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 20px 4cm;
+
+}
+
+.about .leftSide{
+	width: 50%;
+}
+
+.about .leftSide h1{
+	font-size: 1cm;
+	margin-bottom: 0.5cm;
+}
+
+.about .leftSide p{
+	font-size: 15px;
+	color: grey;
+}
+
+.about .leftSide button{
+	margin-top: 0.8cm;
+}
+
+.about .rightSide img{
+	width: 	15cm;
+	border-radius: 10%;
+}
+
+.process{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 4cm;
+
+}
+
+.process .box{
+	padding: 30px;
+	width: 7cm;
+	border-radius: 5px;
+	height: 7cm;
+	margin: 20px;
+	transition: 1s;
+}
+
+.process .box:hover{
+	box-shadow: 10px 7px 12px grey;
+}
+
+.process .box:hover .bullet{
+	background: black;
+	transition: 1s;
+	color: white;
+	font-weight: 700;
+}
+
+.process .box .bullet{
+	border-radius: 50%;
+	border: 1px solid black;
+	color: black;
+	font-size: 0.8cm;
+	padding: 15px 25px;
+	border-bottom: 20px;
+	text-align: left;
+}
+
+footer{
+	padding: 1cm 4cm;
+	background: #555;
+	color: white;
+	display: flex;
+	flex-direction: column;
+}
+
+footer .top-bar{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding-bottom: 30px;
+	border-bottom: 1px solid grey;
+	justify-content: space-between;
+}
+
+footer .top-bar div{
+	display: flex;
+	flex-direction: row;
+	flex-basis: 50%;
+	align-items: center;
+}
+
+footer .top-bar div h1{
+	font-size: 0.8cm;
+}
+
+footer .top-bar img{
+	width: 2cm;
+	border-radius: 50%;
+	margin-right: 20px;
+}
+
+footer .top-bar p{
+	flex-basis: 50%;
+}
+
+footer .middle-bar{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding-bottom: 10px;
+	border-bottom: 1px solid grey;
+}
+
+footer .middle-bar h2{
+	font-size: 25px;
+	margin-top: 25px;
+}
+
+footer .middle-bar ul li{
+	list-style: none;
+}
+
+footer .middle-bar .bar1{
+	flex-basis: 20%;
+}
+
+footer .middle-bar .bar1 p{
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+footer .middle-bar .bar1 input{
+	background: black;
+	color: grey;
+	outline:  none;
+	font-size: 17px;
+	border: none;
+	padding: 5px 10px;
+	margin-top: 10px;
+}
+
+footer .middle-bar .bar1 BUTTON{
+	border-radius: 1cm;
+	background: white;
+	color: black;
+	padding: 8px 25px;
+	font-size: 17px;
+	border: none;
+	margin-top: 10px;
+	transition: 0.5s;
+}
+
+
+footer .middle-bar .bar1 BUTTON:hover{
+	color: white;
+	background: black;
+}
+
+footer .middle-bar p{
+	color: grey;
+}
+
+footer .middle-bar .bar2 ul li, footer .middle-bar .bar3 ul li, footer .middle-bar .bar4 ul li{
+	text-align: left;
+	color: grey;
+	margin-bottom: 10px;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+footer .middle-bar .bar2 ul li:hover, footer .middle-bar .bar3 ul li:hover, footer .middle-bar .bar4 ul li:hover{
+	color: white;
+	font-weight: 500;
+}
+
+footer .middle-bar .bar2 ul li h2, footer .middle-bar .bar3 ul li h2, footer .middle-bar .bar4 ul li h2{
+	color: white;
+	margin-bottom: 10px;
+}
+
+footer .middle-bar .bar5 h2{
+	margin-bottom: 15px;
+}
+
+footer .middle-bar .bar5 .info{
+	padding: 15px 15px;
+	background: #6e6e9794;
+	margin-bottom: 5px;
+	border-radius: 7px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+footer .middle-bar .bar5 .info:hover{
+	background: white;
+	color: black;
+}
+
+footer .middle-bar .bar5 .info:hover p{
+	color: grey;
+}
+
+footer .middle-bar .bar5 .info i{
+	padding: 7px;
+	border-radius: 50%;
+	background: navajowhite;
+	color: black;
+	margin-right: 5px;
+}
+
+footer .middle-bar .bar5 .info p{
+	color: white;
+}
+
+footer .bottom-bar{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+footer .bottom-bar .social-icons i{
+	font-size: 0.7cm;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+/*................. link color......*/
+a:link {
+	color: rgb(236, 107, 2);
+	background-color: transparent;
+	text-decoration: none;
+  }
+  a:visited {
+	color: black;
+	background-color: transparent;
+	text-decoration: none;
+  }
+  a:hover {
+	color: rgb(236, 107, 2);
+	background-color: transparent;
+	text-decoration: underline;
+  }
+  a:active {
+	color: rgb(236, 107, 2);
+	background-color: transparent;
+	text-decoration: underline;
+  }
+  /*...........slider...............*/
+  #slider {
+    margin: 0;
+    /* margin-top:46px; */
+    padding-top: 55%;
+    background: url("/img/ds.png") top center / cover no-repeat;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+a:link {
+	color: black;
+	background-color: transparent;
+	text-decoration: none;
+  }
+  a:visited {
+	color: black;
+	background-color: transparent;
+	text-decoration: none;
+  }
+  a:hover {
+	color: rgb(236, 107, 2);
+	background-color: transparent;
+	text-decoration: underline;
+  }
+  a:active {
+	color: rgb(236, 107, 2);
+	background-color: transparent;
+	text-decoration: underline;
+  }
+
+
+
+
+
+  
